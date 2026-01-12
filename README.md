@@ -67,9 +67,6 @@ No additional setup is required.
 
 ---
 
-
----
-
 ## 📌 Future Improvements
 
 - Add sound effects
