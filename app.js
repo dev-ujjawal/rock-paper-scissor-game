@@ -26,7 +26,6 @@ const genCompChoice = () => {
 }
 
 const drawGame = () => {
-    console.log("Draw");
     msg.innerText = "The game was Draw.";
     msgContainer.style.backgroundColor = "#2A2D34";
 }
@@ -35,22 +34,18 @@ const showWinner = (userWin, userChoice, compChoice) => {
     if (userWin) {
         userScore++;    //increment by 1 on every win
         userScorePara.innerText = userScore;
-        console.log("You Win!");
         msg.innerText = `You Win! Your ${userChoice} beats ${compChoice} `;
         msgContainer.style.backgroundColor = "green";
     } else {
         compScore++;    //increment by 1
         compScorePara.innerText = compScore;
-        console.log("You Lose.");
         msg.innerText = `You lose. ${compChoice} beats ${userChoice} `;
         msgContainer.style.backgroundColor = "red";
     }
 }
 
 const playGame = (userChoice) => {
-    console.log("user choice: ", userChoice);
     const compChoice = genCompChoice(); 
-    console.log("Comp choice: ", compChoice);
     
     //userChoice and compChoice are equal then draw game.
     if (userChoice === compChoice){
@@ -75,7 +70,6 @@ const playGame = (userChoice) => {
 choices.forEach((choice) => {
     //add a click eventListener here on every choice 
     choice.addEventListener("click", () => {
-        console.log("choice is clicked");
         const userChoice = choice.getAttribute("id");
         playGame(userChoice)
     })  
