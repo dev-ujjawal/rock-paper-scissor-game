@@ -7,7 +7,7 @@
 h1 {
     /* easy way to center a text horizontally and vertically */
     height: 5rem;
-    line-height: 5rem; 
+    line-height: 5rem;
     background-color: #2A2D34;
     color: #f0ba08;
 }
@@ -36,14 +36,14 @@ h1 {
     /* scale: 1.2; */
 }
 
-.choice img{
+.choice img {
     height: 150px;
     width: 150px;
     object-fit: cover;
     border-radius: 50%;
 }
 
-.choice img:hover{
+.choice img:hover {
     scale: 1.2;
 }
 
@@ -56,7 +56,8 @@ h1 {
     font-size: 1.5rem;
 }
 
-#user-score, #comp-score {
+#user-score,
+#comp-score {
     font-size: 3.5rem;
 }
 
@@ -70,3 +71,20 @@ h1 {
     margin-top: 5rem;
 }
 
+/* New game button */
+.new-game {
+    height: 2rem;
+    width: 8rem;
+    background-color: #f0ba08;
+    color: #2A2D34;
+    font-size: medium;
+    font-weight: bold;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.new-game:hover{
+    background-color:#fbd558;
+}

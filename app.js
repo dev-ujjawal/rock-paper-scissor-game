@@ -7,6 +7,17 @@ let msgContainer = document.querySelector(".msg-container");
 let userScorePara = document.querySelector("#user-score");
 let compScorePara = document.querySelector("#comp-score");
 
+let newGameBtn = document.querySelector(".new-game");
+
+const reset = () => {
+    userScorePara.innerText = 0; 
+    compScorePara.innerText = 0;
+    msg.innerText = "Play your move";
+    msgContainer.style.backgroundColor = "#2A2D34"
+}
+
+newGameBtn.addEventListener("click", reset);
+
 const genCompChoice = () => {
     let options = ["rock", "paper", "scissor"];
     const compIdx = Math.floor(Math.random()*3)
