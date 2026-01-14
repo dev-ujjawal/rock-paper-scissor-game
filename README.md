@@ -5,6 +5,11 @@ This project demonstrates core JavaScript concepts such as **event handling**, *
 
 ---
 
+## 🔗 Live Demo
+https://dev-ujjawal.github.io/rock-paper-scissor-game/
+
+---
+
 ## ✨ Features
 
 - Play against the computer
